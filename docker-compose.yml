@@ -36,13 +36,13 @@ services:
     image: docker.io/library/redis:7
     restart: unless-stopped
     volumes:
-      - redisdata:/data
+      - /mnt/volume_nyc3_01/redisdata:/data
 
   db:
     image: docker.io/library/postgres:15
     restart: unless-stopped
     volumes:
-      - pgdata:/var/lib/postgresql/data
+      - /mnt/volume_nyc3_01/pgdata:/var/lib/postgresql/data
     environment:
       POSTGRES_DB: paperless
       POSTGRES_USER: paperless
@@ -60,10 +60,14 @@ services:
     ports:
       - "8000:8000"
     volumes:
-      - data:/usr/src/paperless/data
-      - media:/usr/src/paperless/media
-      - ./export:/usr/src/paperless/export
-      - ./consume:/usr/src/paperless/consume
+      - /mnt/volume_nyc3_01/data:/usr/src/paperless/data
+      - /mnt/volume_nyc3_01/media:/usr/src/paperless/media
+      - /mnt/volume_nyc3_01/export:/usr/src/paperless/export
+      - /mnt/volume_nyc3_01/consume:/usr/src/paperless/consume
+      # - data:/usr/src/paperless/data
+      # - media:/usr/src/paperless/media
+      # - ./export:/usr/src/paperless/export
+      # - ./consume:/usr/src/paperless/consume
     env_file: docker-compose.env
     environment:
       PAPERLESS_REDIS: redis://broker:6379
