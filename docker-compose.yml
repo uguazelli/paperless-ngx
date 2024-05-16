@@ -60,14 +60,14 @@ services:
     ports:
       - "8000:8000"
     volumes:
-      - /mnt/volume_nyc3_01/data:/usr/src/paperless/data
-      - /mnt/volume_nyc3_01/media:/usr/src/paperless/media
-      - /mnt/volume_nyc3_01/export:/usr/src/paperless/export
-      - /mnt/volume_nyc3_01/consume:/usr/src/paperless/consume
-      # - data:/usr/src/paperless/data
-      # - media:/usr/src/paperless/media
-      # - ./export:/usr/src/paperless/export
-      # - ./consume:/usr/src/paperless/consume
+      # - /mnt/volume_nyc3_01/data:/usr/src/paperless/data
+      # - /mnt/volume_nyc3_01/media:/usr/src/paperless/media
+      # - /mnt/volume_nyc3_01/export:/usr/src/paperless/export
+      # - /mnt/volume_nyc3_01/consume:/usr/src/paperless/consume
+      - data:/usr/src/paperless/data
+      - media:/usr/src/paperless/media
+      - ./export:/usr/src/paperless/export
+      - ./consume:/usr/src/paperless/consume
     env_file: docker-compose.env
     environment:
       PAPERLESS_REDIS: redis://broker:6379
