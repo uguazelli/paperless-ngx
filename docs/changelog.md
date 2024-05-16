@@ -1,5 +1,41 @@
 # Changelog
 
+## paperless-ngx 2.8.6
+
+### Bug Fixes
+
+- Security: disallow API remote-user auth if disabled [@shamoon](https://github.com/shamoon) ([#6739](https://github.com/paperless-ngx/paperless-ngx/pull/6739))
+- Fix: retain sort field from global search filtering, use FILTER_HAS_TAGS_ALL [@shamoon](https://github.com/shamoon) ([#6737](https://github.com/paperless-ngx/paperless-ngx/pull/6737))
+
+### All App Changes
+
+<details>
+<summary>2 changes</summary>
+
+- Security: disallow API remote-user auth if disabled [@shamoon](https://github.com/shamoon) ([#6739](https://github.com/paperless-ngx/paperless-ngx/pull/6739))
+- Fix: retain sort field from global search filtering, use FILTER_HAS_TAGS_ALL [@shamoon](https://github.com/shamoon) ([#6737](https://github.com/paperless-ngx/paperless-ngx/pull/6737))
+</details>
+
+## paperless-ngx 2.8.5
+
+### Bug Fixes
+
+- Fix: restore search highlighting on large cards results [@shamoon](https://github.com/shamoon) ([#6728](https://github.com/paperless-ngx/paperless-ngx/pull/6728))
+- Fix: global search filtering links broken in 2.8.4 [@shamoon](https://github.com/shamoon) ([#6726](https://github.com/paperless-ngx/paperless-ngx/pull/6726))
+- Fix: some buttons incorrectly aligned in 2.8.4 [@shamoon](https://github.com/shamoon) ([#6715](https://github.com/paperless-ngx/paperless-ngx/pull/6715))
+- Fix: don't format ASN as number on dashboard [@shamoon](https://github.com/shamoon) ([#6708](https://github.com/paperless-ngx/paperless-ngx/pull/6708))
+
+### All App Changes
+
+<details>
+<summary>4 changes</summary>
+
+- Fix: restore search highlighting on large cards results [@shamoon](https://github.com/shamoon) ([#6728](https://github.com/paperless-ngx/paperless-ngx/pull/6728))
+- Fix: global search filtering links broken in 2.8.4 [@shamoon](https://github.com/shamoon) ([#6726](https://github.com/paperless-ngx/paperless-ngx/pull/6726))
+- Fix: some buttons incorrectly aligned in 2.8.4 [@shamoon](https://github.com/shamoon) ([#6715](https://github.com/paperless-ngx/paperless-ngx/pull/6715))
+- Fix: don't format ASN as number on dashboard [@shamoon](https://github.com/shamoon) ([#6708](https://github.com/paperless-ngx/paperless-ngx/pull/6708))
+</details>
+
 ## paperless-ngx 2.8.4
 
 ### Features
